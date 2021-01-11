@@ -1,0 +1,44 @@
+﻿@model IEnumerable<EML.Categoria>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    @Html.ActionLink("Crear Categoría", "Crear")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescripcionLarga)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Abreviatura)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescripcionLarga)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Abreviatura)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Editar", new { id = item.CategoriaId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.CategoriaId }) |
+                @*@Html.ActionLink("Delete", "Delete", new { id=item.CategoriaId })*@
+            </td>
+        </tr>
+    }
+
+</table>
