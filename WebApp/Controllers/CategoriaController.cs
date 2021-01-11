@@ -47,9 +47,34 @@ namespace WebApp.Controllers
 
         public ActionResult Editar(int Id)
         {
+            Categoria cat = new Categoria();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://localhost:54255/api/");
+                //HTTP GET
+                var responseTask = client.GetAsync("Categoria/"+ Convert.ToString(Id));
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var readTask = result.Content.ReadAsAsync<Categoria>();
+                    readTask.Wait();
+
+                    cat = readTask.Result;
+                }
+                else //web api sent error response 
+                {
+                    //log response status here..
+
+                    cat = new Categoria ();
+
+                    ModelState.AddModelError(string.Empty, "Server error. Please contact administrator.");
+                }
+            }
             ViewBag.TituloViewPanel = "Edición de Categoría";
             //var categoria = bll.ObtenerCategoria(Id);
-            return View();
+            return View(cat);
 
         }
         [HttpPost]
@@ -59,10 +84,25 @@ namespace WebApp.Controllers
             ViewBag.TituloViewPanel = "Edición de Categoría";
             if (ModelState.IsValid)
             {
-                //bll.ActualizarCategoria(model);
-            }
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("http://localhost:54255/api/Categoria");
 
-            return RedirectToAction("Index");
+                    //HTTP POST
+                    var postTask = client.PostAsJsonAsync<Categoria>("model", model);
+                    postTask.Wait();
+
+                    var result = postTask.Result;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("Index");
+                    }
+                }
+            }
+            ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
+
+            return View(model);
+            
 
         }
 
@@ -80,10 +120,25 @@ namespace WebApp.Controllers
             ViewBag.TituloViewPanel = "Agregar Categoría";
             if (ModelState.IsValid)
             {
-                //bll.AgregarCategoria(model);
-            }
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri("http://localhost:54255/api/Categoria");
 
-            return RedirectToAction("Index");
+                    //HTTP POST
+                    var postTask = client.PostAsJsonAsync<Categoria>("model", model);
+                    postTask.Wait();
+
+                    var result = postTask.Result;
+                    if (result.IsSuccessStatusCode)
+                    {
+                        return RedirectToAction("Index");
+                    }
+                }
+            }
+            ModelState.AddModelError(string.Empty, "Server Error. Please contact administrator.");
+
+            return View(model);
+
         }
     }
 }

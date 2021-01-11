@@ -72,6 +72,27 @@ namespace Api.Controllers
 
         }
 
+        public IHttpActionResult GetCategoria(int id)
+        {
+            if (id <= 0)
+                return BadRequest("Categoria Invalida");
+            try
+            {
+                var item = bll.ObtenerCategoria(id);
+
+                if (item == null)
+                    return NotFound();
+                else
+                    return Ok(item);
+            }
+            catch (Exception)
+            {
+
+                return InternalServerError();
+            }
+
+            
+        }
 
     }
 }

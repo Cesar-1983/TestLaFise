@@ -3,3 +3,4 @@ C:\Users\Legion Y540\source\repos\TestLaFise\EML\bin\Debug\EML.pdb
 C:\Users\Legion Y540\source\repos\TestLaFise\EML\obj\Debug\EML.csproj.CoreCompileInputs.cache
 C:\Users\Legion Y540\source\repos\TestLaFise\EML\obj\Debug\EML.dll
 C:\Users\Legion Y540\source\repos\TestLaFise\EML\obj\Debug\EML.pdb
+C:\Users\Legion Y540\source\repos\TestLaFise\EML\obj\Debug\EML.csprojAssemblyReference.cache
