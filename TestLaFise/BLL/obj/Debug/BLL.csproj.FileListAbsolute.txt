@@ -1,0 +1,14 @@
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\bin\Debug\BLL.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\bin\Debug\BLL.pdb
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\bin\Debug\DAL.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\bin\Debug\EML.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\bin\Debug\DAL.pdb
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\bin\Debug\DAL.dll.config
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\bin\Debug\EML.pdb
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\obj\Debug\BLL.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\BLL\obj\Debug\BLL.pdb

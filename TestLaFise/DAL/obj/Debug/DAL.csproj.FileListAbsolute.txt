@@ -1,0 +1,14 @@
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\bin\Debug\DAL.dll.config
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\bin\Debug\DAL.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\bin\Debug\DAL.pdb
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\bin\Debug\EML.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\bin\Debug\EML.pdb
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\obj\Debug\DAL.dll
+C:\Users\Legion Y540\source\repos\TestLaFise\DAL\obj\Debug\DAL.pdb
